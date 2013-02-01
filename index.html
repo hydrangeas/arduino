@@ -36,11 +36,13 @@
 
 
     <!--FANCYBOX SCRIPT-->    
+    <!--
     <script type="text/javascript">
       $(document).ready(function() {	
           $("a.image").fancybox();
           });
     </script>
+    -->
     <!--/FANCYBOX SCRIPT-->    
 
 
@@ -65,8 +67,9 @@
         <ul>
           <li><a href="#home" class="panel selected">Home</a></li>
           <li><a href="#about" class="panel">About Us</a></li>
-          <li><a href="#gallery" class="panel">Gallery</a></li>
+          <li><a href="sleepclock.html">+ Sleep Clock</a></li>
           <!--
+          <li><a href="#gallery" class="panel">Gallery</a></li>
           <li><a href="#contact" class="panel">Contact</a></li>
           <li><a href="detail.html">+ Detail</a></li>
           -->
@@ -79,66 +82,52 @@
         <!--HOME STARTS HERE-->
         <div id="home" class="item">
           <div class="content">
+            <ul class="gallery_group">
+              <li>
+              <a class="image" href="sleepclock.html" rel="image"><img src="images/photos/thumb_01.jpg" alt="image" /></a>
+              <h5>Sleep Clock</h5>
+              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>
+              </li>
 
-            <div id="slider" class="nivoSlider">
-              <img src="images/photos/slider_01.jpg" alt="Image01" />
-              <img src="images/photos/slider_02.jpg" alt="Image02" />
-              <img src="images/photos/slider_03.jpg" alt="Image03" />
-              <img src="images/photos/slider_04.jpg" alt="Image04" />
-              <img src="images/photos/slider_05.jpg" alt="Image05" />
-              <img src="images/photos/slider_06.jpg" alt="Image06" />
-            </div> <!--/slider-->
-            <div id="slider_shadow"></div>
+              <li>
+              <a class="image" href="todo.html" rel="image"><img src="images/photos/thumb_02.jpg" alt="image" /></a>
+              <h5>Time-lapse Photograpy</h5>
+              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>
+              </li>
+
+              <li>
+              <a class="image" href="todo.html" rel="image"><img src="images/photos/projects/airborne.jpg" alt="image" /></a>
+              <h5>Airborne Photography</h5>
+              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>
+              </li> 
+
+              <li>
+              <a class="image" href="todo.html" rel="image"><img src="images/photos/thumb_04.jpg" alt="image" /></a>
+              <h5>Project 4</h5>
+              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>
+              </li>
+
+              <li>
+              <a class="image" href="todo.html" rel="image"><img src="images/photos/thumb_05.jpg" alt="image" /></a>
+              <h5>Project 5</h5>
+              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>
+              </li>
+            </ul> <!--/gallery_group (1st)--> 
 
             <div class="separator"></div>
 
-            <div class="one_third">
-
-              <h3><img src="images/design.png" alt="Design" />Circuit Design</h3>
-              <p>
+            <ul class="tabs">
+              <li><a href="">1</a></li>
               <!--
-              Arduino + Grove (SeeedStudio) のパーツは基本的にブレッドボードもハンダも必要ありません。しかしながら、今回はArduino Megaを用いていたため、SDカードモジュールのSPIピンが合わず、自作することにしました。
+              <li><a href="">2</a></li>                                          
               -->
-              Arduino + Grove (SeeedStudio) の組み合わせはブレッドボードやハンダを必要としません。しかしながら、Arduino Megaだけは一部のピンがArduino (無印) とは異なっています。特にSPIピンは Grove Shield for Arduino Mega でもサポートされていないので、自作が必要になります。
-              </p>
-              <a href="#circuitdesign">Jump to portfolio</a>
-
-            </div> <!--/one_third-->
-
-            <div class="one_third">
-
-              <h3><img src="images/coding.png" alt="Coding" />Coding</h3>
-              <p>
-              オープンソースハードウェアの精神に則って、Arduino互換であればすべてのプログラムは使いまわすことができます。当然、ピン番号は変更する必要はあります。
-              </p>
-              <a href="#gallery">Jump to portfolio</a>
-
-            </div> <!--/one_third-->  
-
-            <div class="one_third">
-
-              <h3><img src="images/ideas.png" alt="Ideas" />Inovative Ideas</h3>
-              <p>
-              Arduino で何かを作るよりも、何をやろうか考える時間の方が長いのが現実だったりします。Wish List（今作っている、もしくは作ろうとしている）リストは次の通りです。
-              </p>
-
-              <ul class="check_list">
-                <li>Sleep Clock (In Progress)</li>
-                <li>Time-lapse Photograpy</li>
-                <li>Airborne Photography</li> 
-              </ul>
-
-              <a href="#contact">Contact Us</a>
-
-            </div> <!--/one_third-->                                
-
+            </ul>                  
           </div> <!--/content -->
         </div> <!--/home-->
         <!--HOME ENDS HERE-->
 
 
-
-        <!--ABOUT US STARTS HERE-->       
+        <!--ABOUT ME STARTS HERE-->       
         <div id="about" class="item">
           <div class="content">
 
@@ -200,105 +189,11 @@
 
 
         <!--GALLERY STARTS HERE-->        
+        <!--
         <div id="gallery" class="item">
-          <div class="content">
-
-            <ul class="gallery_group">
-
-              <li>
-              <a class="image" href="images/photos/slider_01.jpg" rel="image"><img src="images/photos/thumb_01.jpg" alt="image" /></a>
-              <h5>Project 1</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li>
-
-              <li>
-              <a class="image" href="images/photos/slider_02.jpg" rel="image"><img src="images/photos/thumb_02.jpg" alt="image" /></a>
-              <h5>Project 2</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li>
-
-              <li>
-              <a class="image" href="images/photos/slider_03.jpg" rel="image"><img src="images/photos/thumb_03.jpg" alt="image" /></a>
-              <h5>Project 3</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li> 
-
-              <li>
-              <a class="image" href="images/photos/slider_04.jpg" rel="image"><img src="images/photos/thumb_04.jpg" alt="image" /></a>
-              <h5>Project 4</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li>
-
-              <li>
-              <a class="image" href="images/photos/slider_05.jpg" rel="image"><img src="images/photos/thumb_05.jpg" alt="image" /></a>
-              <h5>Project 5</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li>
-
-              <li>
-              <a class="image" href="images/photos/slider_06.jpg" rel="image"><img src="images/photos/thumb_06.jpg" alt="image" /></a>
-              <h5>Project 3</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li> 			
-
-            </ul> <!--/gallery_group (1st)--> 
-
-
-            <!--
-            <ul class="gallery_group">
-
-              <li>
-              <a class="image" href="images/photos/slider_04.jpg" rel="image"><img src="images/photos/thumb_04.jpg" alt="image" /></a>
-              <h5>Project 7</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li>
-
-              <li>
-              <a class="image" href="images/photos/slider_05.jpg" rel="image"><img src="images/photos/thumb_05.jpg" alt="image" /></a>
-              <h5>Project 8</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li>
-
-              <li>
-              <a class="image" href="images/photos/slider_06.jpg" rel="image"><img src="images/photos/thumb_06.jpg" alt="image" /></a>
-              <h5>Project 9</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li>                    
-
-              <li>
-              <a class="image" href="images/photos/slider_01.jpg" rel="image"><img src="images/photos/thumb_01.jpg" alt="image" /></a>
-              <h5>Project 10</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li>
-
-              <li>
-              <a class="image" href="images/photos/slider_02.jpg" rel="image"><img src="images/photos/thumb_02.jpg" alt="image" /></a>
-              <h5>Project 11</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li>
-
-              <li>
-              <a class="image" href="images/photos/slider_03.jpg" rel="image"><img src="images/photos/thumb_03.jpg" alt="image" /></a>
-              <h5>Project 12</h5>
-              <p>Lorem ipsum dolor sit amet, conset tetur adipiscing elit. Pellentesque a arcu non mi congue elementum.</p>				
-              </li> 
-
-            </ul>
-            -->
-            <!--/gallery_group (2nd)--> 
-
-            <div class="separator"></div>
-
-
-            <ul class="tabs">
-              <li><a href="">1</a></li>
-              <!--
-              <li><a href="">2</a></li>                                          
-              -->
-            </ul>                  
-
-          </div> <!--/content -->
-        </div> <!--/gallery--> 
+        </div>
+        -->
+        <!--/gallery--> 
         <!--GALLERY ENDS HERE-->
 
 

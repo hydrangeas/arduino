@@ -1,0 +1,17 @@
+
+#contact_container input, #contact_container textarea, form.search>input {
+	border:white 1px solid;
+	padding-left:25px;
+	padding-top:15px;
+	padding-bottom:15px; }	
+	
+#contact_container input { height:17px;  }
+
+#menu ul li a { 
+	height:44px;
+	padding:12px 30px 0 0; }
+
+form.search>input { 
+	padding-top:10px;
+	padding-bottom:10px;
+	height:15px; }
